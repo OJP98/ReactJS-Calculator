@@ -2,14 +2,19 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React, { Component } from 'react'
 
-// eslint-disable-next-line react/prefer-stateless-function
 export default class Button extends Component {
+  setValue() {
+    const { onClick, btnValue, type } = this.props
+    onClick(btnValue, type)
+  }
+
   render() {
-    const { btnValue, type } = this.props
+    const { text, type } = this.props
+
     return (
-      <div className={type}>
+      <div className={type} role="button" tabIndex={0} onClick={() => { this.setValue() }} onKeyPress={this.handleKeyPress}>
         <p>
-          {btnValue}
+          {text}
         </p>
       </div>
     )

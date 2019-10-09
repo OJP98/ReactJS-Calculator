@@ -1,4 +1,4 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.jsx',
@@ -33,4 +33,4 @@ module.exports = {
       filename: './index.html',
     }),
   ],
-};
+}

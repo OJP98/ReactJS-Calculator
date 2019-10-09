@@ -80,7 +80,7 @@ p {
 .symbol {
     color: #fff !important;
     border: 2px solid #198f50;
-    background: #20bf6b;
+    background: #20bf6b !important;
 }
 
 .operation {
