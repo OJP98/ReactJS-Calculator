@@ -27,6 +27,7 @@
         "babel-jest": "^24.9.0",
         "babel-loader": "^8.0.6",
         "css-loader": "^3.2.0",
+        "enzyme": "^3.10.0",
         "eslint": "^6.5.1",
         "eslint-config-airbnb": "^18.0.1",
         "eslint-loader": "^3.0.2",
@@ -58,9 +59,12 @@
         "moduleNameMapper": {
             "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
             "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-        }
+        },
+        "setupTestFrameworkScriptFile": "<rootDir>/setup-test.js"
     },
     "dependencies": {
+        "chol": "^1.0.0",
+        "enzyme-adapter-react-16": "^1.14.0",
         "node-sass": "^4.12.0"
     }
 }
