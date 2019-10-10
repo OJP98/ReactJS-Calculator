@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const operations = require('./operations/index')
+const operations = require('./index')
 
 describe('General calculator operations', () => {
   test('Should add two numbers', () => {

@@ -6,7 +6,7 @@ import Button from './Button'
 describe('Test button value', () => {
   const value = '2'
   test('Click button from shallow', () => {
-    const button = shallow(<Button btnValue={value} />)
-    expect(button.find('div').find('a').text()).toEqual(value)
+    const button = shallow(<Button text={value} btnValue={value} />)
+    expect(button.find('div').find('p').text()).toEqual(value)
   })
 })
