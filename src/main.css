@@ -37,6 +37,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
 }
 
 .button:hover {
@@ -58,6 +59,7 @@ p {
 
 .display p {
     font-family: 'Big Shoulders Text' !important;
+    color: rgb(51, 51, 51);
 }
 
 .number {

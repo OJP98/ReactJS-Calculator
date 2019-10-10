@@ -33,6 +33,7 @@ export default class Calculator extends Component {
     // eslint-disable-next-line no-param-reassign
     if (result.toString().includes('.') && btnValue === '.') { btnValue = '' }
 
+
     if (isNumber) {
       if (result === '0' && btnValue === '.') {
         this.setState({
@@ -87,8 +88,8 @@ export default class Calculator extends Component {
   }
 
   calculate(firstNumber, secondNumber, operator) {
-    const n1 = parseFloat(firstNumber, 10)
-    const n2 = parseFloat(secondNumber, 10)
+    const n1 = Number(firstNumber)
+    const n2 = Number(secondNumber)
     let resultado = 0
 
     if (operator === 'sum') {
@@ -106,7 +107,7 @@ export default class Calculator extends Component {
     }
 
     if (resultado % 1 !== 0) resultado = resultado.toFixed(2)
-    else if (resultado < 0 || resultado.toString().length > 8) resultado = 'ERROR'
+    else if (resultado < 0 || resultado.toString().length > 9) resultado = 'ERROR'
 
     this.setState({
       result: resultado,
